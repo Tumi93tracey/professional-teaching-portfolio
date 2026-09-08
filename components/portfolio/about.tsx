@@ -1,4 +1,4 @@
-import { skills, profile } from "@/lib/portfolio-data"
+import { skillGroups, profile } from "@/lib/portfolio-data"
 
 export function About() {
   return (
@@ -15,17 +15,24 @@ export function About() {
           <div>
             <p className="text-lg leading-relaxed text-muted-foreground text-pretty">{profile.summary}</p>
 
-            <h3 className="mt-10 text-sm font-semibold uppercase tracking-wider text-foreground">Core skills</h3>
-            <ul className="mt-4 flex flex-wrap gap-2.5">
-              {skills.map((skill) => (
-                <li
-                  key={skill}
-                  className="rounded-full border border-border bg-background px-4 py-1.5 text-sm font-medium text-foreground"
-                >
-                  {skill}
-                </li>
+            <h3 className="mt-10 text-sm font-semibold uppercase tracking-wider text-foreground">Skills</h3>
+            <div className="mt-5 grid gap-6 sm:grid-cols-2">
+              {skillGroups.map((group) => (
+                <div key={group.title}>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-primary">{group.title}</p>
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {group.skills.map((skill) => (
+                      <li
+                        key={skill}
+                        className="rounded-full border border-border bg-background px-3.5 py-1.5 text-sm font-medium text-foreground"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

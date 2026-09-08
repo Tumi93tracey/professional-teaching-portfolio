@@ -44,20 +44,49 @@ export const services = [
   },
 ]
 
-export const skills = [
-  "Lesson Planning",
-  "Reading & Literacy Development",
-  "Classroom Management",
-  "Curriculum Development",
-  "Assessment & Evaluation",
-  "Early Childhood Development",
-  "Parent–Teacher Communication",
-  "Microsoft Word & Excel (CAT)",
-  "Typing & Document Preparation",
-  "Storytelling",
-  "Patience & Empathy",
-  "Time Management",
+export const skillGroups = [
+  {
+    title: "Teaching & Early Childhood",
+    skills: [
+      "Lesson Planning From Scratch",
+      "Reading & Phonics Instruction",
+      "Early Childhood Development (ECD)",
+      "Personalised Timetables",
+      "Curriculum Alignment (CAPS)",
+      "Assessment & Progress Tracking",
+      "Play-Based & Sensory Learning",
+      "Inclusive & Neurodiverse Support",
+    ],
+  },
+  {
+    title: "Tutoring & Child Care",
+    skills: [
+      "One-on-One Tutoring",
+      "Homework & Aftercare Support",
+      "Classroom Management",
+      "Storytelling & Read-Alouds",
+      "Behaviour Guidance",
+      "Parent–Teacher Communication",
+    ],
+  },
+  {
+    title: "Content & Digital",
+    skills: [
+      "Christian Children's Book Writing",
+      "Educational Resource Design",
+      "Microsoft Word",
+      "Microsoft Excel",
+      "Typing & Document Preparation",
+      "Introduction to Artificial Intelligence",
+    ],
+  },
+  {
+    title: "Personal Strengths",
+    skills: ["Patience & Empathy", "Time Management", "Reliability", "Adaptability", "Attention to Detail"],
+  },
 ]
+
+export const cvUrl = "/itumeleng-kgaswane-cv.pdf"
 
 export const experience = [
   {

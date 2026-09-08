@@ -1,5 +1,5 @@
-import { MapPin, ArrowRight } from "lucide-react"
-import { profile, stats } from "@/lib/portfolio-data"
+import { MapPin, ArrowRight, Download } from "lucide-react"
+import { profile, stats, cvUrl } from "@/lib/portfolio-data"
 
 export function Hero() {
   return (
@@ -33,10 +33,12 @@ export function Hero() {
               <ArrowRight className="size-4" />
             </a>
             <a
-              href="#credentials"
+              href={cvUrl}
+              download={`${profile.name.replace(/\s+/g, "-")}-CV.pdf`}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
             >
-              View credentials
+              <Download className="size-4" />
+              Download CV
             </a>
           </div>
 
