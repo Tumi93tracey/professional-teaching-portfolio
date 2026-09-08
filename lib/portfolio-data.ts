@@ -52,7 +52,7 @@ export const skills = [
   "Assessment & Evaluation",
   "Early Childhood Development",
   "Parent–Teacher Communication",
-  "Microsoft Word (CAT)",
+  "Microsoft Word & Excel (CAT)",
   "Typing & Document Preparation",
   "Storytelling",
   "Patience & Empathy",
@@ -139,7 +139,7 @@ export const otherQualifications = [
   },
   {
     title: "Computer Applications Technology (End User)",
-    issuer: "Microsoft Word & Office proficiency",
+    issuer: "Microsoft Word & Excel proficiency",
   },
 ]
 
