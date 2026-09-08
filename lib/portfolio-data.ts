@@ -88,6 +88,30 @@ export const skillGroups = [
 
 export const cvUrl = "/itumeleng-kgaswane-cv.pdf"
 
+export const projects = [
+  {
+    title: "Community Charity Outreach",
+    tag: "Social Responsibility",
+    description:
+      "Led and volunteered in a socially responsible community outreach, distributing food parcels, school supplies, and support to families and children in need — creating meaningful, hands-on impact in the community.",
+    image: "/projects/charity-outreach.png",
+  },
+  {
+    title: "Kwa-Thema Old Age Gala Dinner",
+    tag: "Fundraising · Personal Company",
+    description:
+      "Organised and hosted a fundraising gala dinner for the elderly in Kwa-Thema under my personal company — coordinating the venue, guests, and programme to raise funds and care for senior citizens.",
+    image: "/projects/gala-dinner.png",
+  },
+  {
+    title: "Rosebank College WIL Soccer Tournament",
+    tag: "Events · Work Integrated Learning",
+    description:
+      "Coordinated a Work Integrated Learning (WIL) soccer tournament at Rosebank College — managing teams, logistics, and the event programme to build teamwork, wellness, and community spirit among students.",
+    image: "/projects/soccer-tournament.png",
+  },
+]
+
 export const experience = [
   {
     role: "Assistant Teacher",
@@ -190,6 +214,7 @@ export const references = [
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Credentials", href: "#credentials" },
   { label: "Contact", href: "#contact" },
